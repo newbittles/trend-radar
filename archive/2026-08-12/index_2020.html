@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1116">
+<title>트렌드 요약</title>
+<style>
+  :root{--bg:#0e1116;--card:#171c24;--card2:#1d2430;--line:#262e3a;
+        --tx:#e8edf4;--muted:#8b98ac;--hot:#ff5c38;--accel:#3ddad7;--up:#ffb02e}
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{margin:0;background:var(--bg);color:var(--tx);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+       padding:0 14px env(safe-area-inset-bottom) 14px;max-width:680px;margin:0 auto}
+  header{position:sticky;top:0;background:linear-gradient(180deg,var(--bg) 70%,transparent);
+         padding:18px 2px 10px;z-index:5}
+  h1{font-size:21px;margin:0 0 4px}
+  .upd{font-size:12.5px;color:var(--muted)}
+  .upd b{color:var(--accel);font-weight:600}
+  section{margin:18px 0 8px}
+  h2{font-size:17px;margin:0 0 2px}
+  .sub{font-size:12px;color:var(--muted);margin:0 0 10px}
+  .card{display:block;background:var(--card);border:1px solid var(--line);
+        border-radius:13px;padding:12px 13px;margin:8px 0;text-decoration:none;
+        color:var(--tx);transition:background .12s}
+  .card:active{background:var(--card2)}
+  .ttl{font-size:14.5px;font-weight:600;line-height:1.35}
+  .ch{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .meta{font-size:12px;color:var(--muted);margin-top:5px;display:flex;
+        align-items:center;gap:6px;flex-wrap:wrap}
+  .tag{display:inline-block;font-size:10.5px;font-weight:600;padding:1px 7px;
+       border-radius:999px;background:#2a3342;color:#aab6c8;vertical-align:middle}
+  .tag.short{background:#3a2030;color:#ff8fb0}
+  .tag.hot{background:#3a2418;color:var(--hot)}
+  .trend{font-size:11px;color:var(--up)}
+  .card.vid{display:flex;gap:11px;align-items:flex-start}
+  .vid .thumb{flex:0 0 108px;aspect-ratio:16/9;border-radius:8px;overflow:hidden;
+              background:#0a0d12}
+  .vid .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .vid .vbody{min-width:0;flex:1}
+  .vid .ttl{font-size:13.5px;display:-webkit-box;-webkit-line-clamp:2;
+            -webkit-box-orient:vertical;overflow:hidden}
+  .spark{display:inline-flex;align-items:flex-end;gap:2px;height:16px;margin-left:2px}
+  .spark i{width:3px;background:var(--accel);border-radius:1px;opacity:.85;display:block}
+  .empty{font-size:13px;color:var(--muted);padding:10px 2px}
+  footer{margin:26px 0 10px;font-size:11.5px;color:var(--muted);text-align:center;
+         border-top:1px solid var(--line);padding-top:14px;line-height:1.6}
+</style>
+</head>
+<body>
+  <header>
+    <h1>📡 트렌드 요약</h1>
+    <div class="upd">업데이트 <b>2026-08-12 20:20</b> · 다음 08/13 07:00</div>
+  </header>
+  
+  <section>
+    <h2>🚀 뜨는 채널</h2>
+    <p class="sub">채널 급상승 랭킹 · 최근 24h</p>
+    
+    <a class="card" href="https://www.youtube.com/channel/UCsJ6RuBiTVWRX156FVbeaGg" target="_blank" rel="noopener">
+      <div class="ttl">슈카월드 <span class="tag">정치</span></div>
+      <div class="meta">구독 372만 · 24h 조회 +38만 · 가속 13.58x</div>
+    </a>
+    <a class="card" href="https://www.youtube.com/channel/UCfCiP0obFQZOB6fJqN-eF8A" target="_blank" rel="noopener">
+      <div class="ttl">KiiiKiii - Topic </div>
+      <div class="meta">구독 4,670 · 24h 조회 +132만 · 가속 1.98x</div>
+    </a>
+    <a class="card" href="https://www.youtube.com/channel/UCuka4cOMWar3MM0WDtE9ehw" target="_blank" rel="noopener">
+      <div class="ttl">애국청년김태풍 <span class="tag">정치</span></div>
+      <div class="meta">구독 45만 · 24h 조회 +54만 · 가속 1.38x</div>
+    </a>
+    <a class="card" href="https://www.youtube.com/channel/UC_J3xR2ygSyIboLngv_QczA" target="_blank" rel="noopener">
+      <div class="ttl">이거아새우 <span class="tag">동물/펫</span></div>
+      <div class="meta">구독 26만 · 24h 조회 +55만 · 가속 1.10x</div>
+    </a>
+    <a class="card" href="https://www.youtube.com/channel/UCnQRkIhRmXrxGrK4-8n-lVw" target="_blank" rel="noopener">
+      <div class="ttl">똘킹 <span class="tag">게임</span></div>
+      <div class="meta">구독 95만 · 24h 조회 +103만 · 가속 1.07x</div>
+    </a>
+    <a class="card" href="https://www.youtube.com/channel/UC1UjBItzzw42Wy9-6DTr_pA" target="_blank" rel="noopener">
+      <div class="ttl">보리차 <span class="tag">드라마/영화</span></div>
+      <div class="meta">구독 5,930 · 24h 조회 +259만 · 가속 1.02x</div>
+    </a>
+  </section>
+  <section>
+    <h2>🎯 트렌드 헌터</h2>
+    <p class="sub">터진 영상 · 최근 24h</p>
+    
+    <a class="card vid" href="https://www.youtube.com/watch?v=WTdyA5N4K0k" target="_blank" rel="noopener">
+      <div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/WTdyA5N4K0k/mqdefault.jpg" alt=""></div>
+      <div class="vbody">
+        <div class="ttl">제나야 말 좀 해라!!!!!!!!!!!!!!</div>
+        <div class="ch">안녕하세요원이입니다잘부탁드립니다</div>
+        <div class="meta">조회 162만 · 24h +106만 </div>
+      </div>
+    </a>
+    <a class="card vid" href="https://www.youtube.com/shorts/8ZCAF9WhyBk" target="_blank" rel="noopener">
+      <div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/8ZCAF9WhyBk/mqdefault.jpg" alt=""></div>
+      <div class="vbody">
+        <div class="ttl">Did I Rank Them Correctly? 😳</div>
+        <div class="ch">Celine Dept</div>
+        <div class="meta">조회 305만 · 24h +66만 <span class="tag short">Shorts</span></div>
+      </div>
+    </a>
+    <a class="card vid" href="https://www.youtube.com/shorts/CSIJgpCNoO4" target="_blank" rel="noopener">
+      <div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/CSIJgpCNoO4/mqdefault.jpg" alt=""></div>
+      <div class="vbody">
+        <div class="ttl">#산 선배님과 어디서나 당당하게 걷기 🎀</div>
+        <div class="ch">RESCENE</div>
+        <div class="meta">조회 98만 · 24h +65만 <span class="tag short">Shorts</span><span class="tag hot">x2.5</span></div>
+      </div>
+    </a>
+    <a class="card vid" href="https://www.youtube.com/shorts/tqNcdRLfC6c" target="_blank" rel="noopener">
+      <div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/tqNcdRLfC6c/mqdefault.jpg" alt=""></div>
+      <div class="vbody">
+        <div class="ttl">‘쌩얼로 인증해버린‘ 이안의 타고난 애굣살</div>
+        <div class="ch">패션탐정냥</div>
+        <div class="meta">조회 104만 · 24h +55만 <span class="tag short">Shorts</span></div>
+      </div>
+    </a>
+    <a class="card vid" href="https://www.youtube.com/shorts/vd8uEtd8ufs" target="_blank" rel="noopener">
+      <div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/vd8uEtd8ufs/mqdefault.jpg" alt=""></div>
+      <div class="vbody">
+        <div class="ttl">주우재가 있는 방은?</div>
+        <div class="ch">침착맨</div>
+        <div class="meta">조회 110만 · 24h +53만 <span class="tag short">Shorts</span></div>
+      </div>
+    </a>
+    <a class="card vid" href="https://www.youtube.com/shorts/BYrtm8iIdbg" target="_blank" rel="noopener">
+      <div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/BYrtm8iIdbg/mqdefault.jpg" alt=""></div>
+      <div class="vbody">
+        <div class="ttl">충격적인 출근 메이크업</div>
+        <div class="ch">숏싹숏싹</div>
+        <div class="meta">조회 89만 · 24h +49만 <span class="tag short">Shorts</span><span class="tag hot">x5.3</span><span class="tag">이슈</span></div>
+      </div>
+    </a>
+  </section>
+  <section>
+    <h2>🔑 키워드 트렌드</h2>
+    <p class="sub">급상승 키워드 · 최근 7d</p>
+    
+    <a class="card kw" href="https://www.youtube.com/results?search_query=김민석" target="_blank" rel="noopener">
+      <div class="ttl">김민석 <span class="tag">연예</span> <span class="trend">🔝 정점</span></div>
+      <div class="meta">언급 529 · 출처 4곳 <span class="spark"><i style="height:33%"></i><i style="height:41%"></i><i style="height:8%"></i><i style="height:34%"></i><i style="height:72%"></i><i style="height:100%"></i><i style="height:66%"></i></span></div>
+    </a>
+    <a class="card kw" href="https://www.youtube.com/results?search_query=정청래" target="_blank" rel="noopener">
+      <div class="ttl">정청래 <span class="tag">정치</span> <span class="trend">🔝 정점</span></div>
+      <div class="meta">언급 525 · 출처 4곳 <span class="spark"><i style="height:14%"></i><i style="height:33%"></i><i style="height:8%"></i><i style="height:19%"></i><i style="height:58%"></i><i style="height:100%"></i><i style="height:35%"></i></span></div>
+    </a>
+    <a class="card kw" href="https://www.youtube.com/results?search_query=서울" target="_blank" rel="noopener">
+      <div class="ttl">서울 <span class="tag">기타</span> <span class="trend">📉 하강</span></div>
+      <div class="meta">언급 395 · 출처 6곳 <span class="spark"><i style="height:90%"></i><i style="height:84%"></i><i style="height:8%"></i><i style="height:21%"></i><i style="height:42%"></i><i style="height:100%"></i><i style="height:44%"></i></span></div>
+    </a>
+    <a class="card kw" href="https://www.youtube.com/results?search_query=논란" target="_blank" rel="noopener">
+      <div class="ttl">논란 <span class="tag">이슈</span> <span class="trend">🔝 정점</span></div>
+      <div class="meta">언급 388 · 출처 8곳 <span class="spark"><i style="height:28%"></i><i style="height:20%"></i><i style="height:8%"></i><i style="height:9%"></i><i style="height:8%"></i><i style="height:88%"></i><i style="height:100%"></i></span></div>
+    </a>
+    <a class="card kw" href="https://www.youtube.com/results?search_query=태풍" target="_blank" rel="noopener">
+      <div class="ttl">태풍 <span class="tag">기타</span> <span class="trend">🔝 정점</span></div>
+      <div class="meta">언급 319 · 출처 5곳 <span class="spark"><i style="height:35%"></i><i style="height:40%"></i><i style="height:8%"></i><i style="height:25%"></i><i style="height:42%"></i><i style="height:100%"></i><i style="height:50%"></i></span></div>
+    </a>
+    <a class="card kw" href="https://www.youtube.com/results?search_query=중국" target="_blank" rel="noopener">
+      <div class="ttl">중국 <span class="tag">세계</span> <span class="trend">🔝 정점</span></div>
+      <div class="meta">언급 301 · 출처 7곳 <span class="spark"><i style="height:16%"></i><i style="height:41%"></i><i style="height:8%"></i><i style="height:31%"></i><i style="height:68%"></i><i style="height:100%"></i><i style="height:64%"></i></span></div>
+    </a>
+  </section>
+  <footer>
+    채널 레이더 자동 발행 · 매일 07:00 · 12:00 · 17:00<br>
+    각 항목을 누르면 원본(채널 / 영상 / 검색)으로 이동합니다.
+  </footer>
+</body>
+</html>
