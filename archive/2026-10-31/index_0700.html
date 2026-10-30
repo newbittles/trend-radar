@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1116">
+<title>트렌드 요약</title>
+<style>
+  :root{--bg:#0e1116;--card:#171c24;--card2:#1d2430;--line:#262e3a;
+        --tx:#e8edf4;--muted:#8b98ac;--hot:#ff5c38;--accel:#3ddad7;--up:#ffb02e}
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{margin:0;background:var(--bg);color:var(--tx);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+       padding:0 14px env(safe-area-inset-bottom) 14px;max-width:680px;margin:0 auto}
+  header{position:sticky;top:0;background:linear-gradient(180deg,var(--bg) 70%,transparent);
+         padding:18px 2px 10px;z-index:5}
+  h1{font-size:21px;margin:0 0 4px}
+  .upd{font-size:12.5px;color:var(--muted)}
+  .upd b{color:var(--accel);font-weight:600}
+  section{margin:18px 0 8px}
+  h2{font-size:17px;margin:0 0 2px}
+  .sub{font-size:12px;color:var(--muted);margin:0 0 10px}
+  .card{display:block;background:var(--card);border:1px solid var(--line);
+        border-radius:13px;padding:12px 13px;margin:8px 0;text-decoration:none;
+        color:var(--tx);transition:background .12s}
+  .card:active{background:var(--card2)}
+  .ttl{font-size:14.5px;font-weight:600;line-height:1.35}
+  .ch{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .meta{font-size:12px;color:var(--muted);margin-top:5px;display:flex;
+        align-items:center;gap:6px;flex-wrap:wrap}
+  .tag{display:inline-block;font-size:10.5px;font-weight:600;padding:1px 7px;
+       border-radius:999px;background:#2a3342;color:#aab6c8;vertical-align:middle}
+  .tag.short{background:#3a2030;color:#ff8fb0}
+  .tag.hot{background:#3a2418;color:var(--hot)}
+  .trend{font-size:11px;color:var(--up)}
+  .card.vid{display:flex;gap:11px;align-items:flex-start}
+  .vid .thumb{flex:0 0 108px;aspect-ratio:16/9;border-radius:8px;overflow:hidden;
+              background:#0a0d12}
+  .vid .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .vid .vbody{min-width:0;flex:1}
+  .vid .ttl{font-size:13.5px;display:-webkit-box;-webkit-line-clamp:2;
+            -webkit-box-orient:vertical;overflow:hidden}
+  .spark{display:inline-flex;align-items:flex-end;gap:2px;height:16px;margin-left:2px}
+  .spark i{width:3px;background:var(--accel);border-radius:1px;opacity:.85;display:block}
+  .empty{font-size:13px;color:var(--muted);padding:10px 2px}
+  footer{margin:26px 0 10px;font-size:11.5px;color:var(--muted);text-align:center;
+         border-top:1px solid var(--line);padding-top:14px;line-height:1.6}
+</style>
+</head>
+<body>
+  <header>
+    <h1>📡 트렌드 요약</h1>
+    <div class="upd">업데이트 <b>2026-10-31 07:00</b> · 다음 10/31 12:00 · <a href="../" style="color:inherit">📚 지난 리포트</a></div>
+  </header>
+  
+  <section>
+    <h2>🚀 뜨는 채널</h2>
+    <p class="sub">채널 급상승 랭킹 · 최근 24h</p>
+    
+    <a class="card" href="https://www.youtube.com/channel/UCExLc_PM3kDogai56jyZEtg" target="_blank" rel="noopener">
+      <div class="ttl">라디오스타 <span class="tag">음악</span></div>
+      <div class="meta">구독 26만 · 24h 조회 +267만 · 가속 64.55x</div>
+    </a>
+    <a class="card" href="https://www.youtube.com/channel/UC5LVEWEPVzX8w7ZUGGV3rfA" target="_blank" rel="noopener">
+      <div class="ttl">또리박스 <span class="tag">참교육/사이다</span></div>
+      <div class="meta">구독 4,660 · 24h 조회 +6만 · 가속 4.64x</div>
+    </a>
+    <a class="card" href="https://www.youtube.com/channel/UCz137S9EUcakMaym4j6YJ-Q" target="_blank" rel="noopener">
+      <div class="ttl">근자씨♡ <span class="tag">먹방/요리</span></div>
+      <div class="meta">구독 1,860 · 24h 조회 +1,265 · 가속 4.19x</div>
+    </a>
+    <a class="card" href="https://www.youtube.com/channel/UCJppank7507iYZK7lkbVjfQ" target="_blank" rel="noopener">
+      <div class="ttl">대박, 뚜루, 오복이네 <span class="tag">뉴스/이슈</span></div>
+      <div class="meta">구독 5,230 · 24h 조회 +806 · 가속 3.49x</div>
+    </a>
+    <a class="card" href="https://www.youtube.com/channel/UCwpRVrX5aAyCO90w3Ef4SCQ" target="_blank" rel="noopener">
+      <div class="ttl">요플래 <span class="tag">스포츠</span></div>
+      <div class="meta">구독 1만 · 24h 조회 +5만 · 가속 3.06x</div>
+    </a>
+    <a class="card" href="https://www.youtube.com/channel/UChnpjbEoqxEuNxYQbwl5d0Q" target="_blank" rel="noopener">
+      <div class="ttl">역사의별들[Stars of History] <span class="tag">정보/지식</span></div>
+      <div class="meta">구독 6,920 · 24h 조회 +2,015 · 가속 2.90x</div>
+    </a>
+  </section>
+  <section>
+    <h2>🎯 트렌드 헌터</h2>
+    <p class="sub">터진 영상 · 최근 24h</p>
+    
+    <a class="card vid" href="https://www.youtube.com/shorts/pU48Zknxi_0" target="_blank" rel="noopener">
+      <div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/pU48Zknxi_0/mqdefault.jpg" alt=""></div>
+      <div class="vbody">
+        <div class="ttl">Korean Self-Serve Ramen store 🤤🤤</div>
+        <div class="ch">Sorm Koemse03</div>
+        <div class="meta">조회 2,226만 · 24h +226만 <span class="tag short">Shorts</span></div>
+      </div>
+    </a>
+    <a class="card vid" href="https://www.youtube.com/shorts/Z956odeOZvM" target="_blank" rel="noopener">
+      <div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/Z956odeOZvM/mqdefault.jpg" alt=""></div>
+      <div class="vbody">
+        <div class="ttl">유치원 학예회 리허설에 없던건데ㅋㅋㅋ</div>
+        <div class="ch">스냅봤니</div>
+        <div class="meta">조회 536만 · 24h +208만 <span class="tag short">Shorts</span><span class="tag hot">x13.3</span></div>
+      </div>
+    </a>
+    <a class="card vid" href="https://www.youtube.com/shorts/dyGn0HYZ4Nk" target="_blank" rel="noopener">
+      <div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/dyGn0HYZ4Nk/mqdefault.jpg" alt=""></div>
+      <div class="vbody">
+        <div class="ttl">The Kitten Met His First Armadillo</div>
+        <div class="ch">Always Room</div>
+        <div class="meta">조회 763만 · 24h +208만 <span class="tag short">Shorts</span></div>
+      </div>
+    </a>
+    <a class="card vid" href="https://www.youtube.com/shorts/9fQzsN405LY" target="_blank" rel="noopener">
+      <div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/9fQzsN405LY/mqdefault.jpg" alt=""></div>
+      <div class="vbody">
+        <div class="ttl">Putin&#x27;s and Kim&#x27;s Magic Box 📦Prank with Trump&#x27;s gone funny 😂 #ai #funny #trump #kimtaehyung #putin</div>
+        <div class="ch">Global Presidents</div>
+        <div class="meta">조회 1,163만 · 24h +153만 <span class="tag short">Shorts</span><span class="tag hot">x2.9</span></div>
+      </div>
+    </a>
+    <a class="card vid" href="https://www.youtube.com/shorts/JECA6zNzCLE" target="_blank" rel="noopener">
+      <div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/JECA6zNzCLE/mqdefault.jpg" alt=""></div>
+      <div class="vbody">
+        <div class="ttl">When You Ask Olise For A Perfect Dap.. 🤣📱</div>
+        <div class="ch">Celine Dept</div>
+        <div class="meta">조회 316만 · 24h +146만 <span class="tag short">Shorts</span></div>
+      </div>
+    </a>
+    <a class="card vid" href="https://www.youtube.com/shorts/9EuWOs002to" target="_blank" rel="noopener">
+      <div class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/9EuWOs002to/mqdefault.jpg" alt=""></div>
+      <div class="vbody">
+        <div class="ttl">&quot;가방에 뭘 넣은 거야?&quot; 횡단보도 건너는 아빠의 놀라운 육아법</div>
+        <div class="ch">심리야놀자</div>
+        <div class="meta">조회 148만 · 24h +135만 <span class="tag short">Shorts</span><span class="tag hot">x17.9</span></div>
+      </div>
+    </a>
+  </section>
+  <section>
+    <h2>🔑 키워드 트렌드</h2>
+    <p class="sub">급상승 키워드 · 최근 7d</p>
+    <div class="empty">데이터 없음</div>
+  </section>
+  <footer>
+    채널 레이더 자동 발행 · 매일 07:00 · 12:00 · 17:00<br>
+    각 항목을 누르면 원본(채널 / 영상 / 검색)으로 이동합니다.
+  </footer>
+</body>
+</html>
